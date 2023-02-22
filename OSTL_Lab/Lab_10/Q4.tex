@@ -1,0 +1,49 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{utopia}
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamercovered{invisible}
+\title[Question 3]
+{Welcome to Question 3}
+\subtitle{Story}
+\author{\textsuperscript{1}Jenkins \textsuperscript{2}Mary \textsuperscript{2}Thompson}
+\institute{\textsuperscript{1}MIT \textsuperscript{2}VIT}
+\begin{document}
+	\maketitle
+	\begin{frame}
+		\frametitle{Content}
+		\tableofcontents
+	\end{frame}
+	\section{Section 1}
+	\begin{frame}
+		\frametitle{Introduction to Latex}
+		\begin{block}{}
+			Welcome to LateX.
+		\end{block}
+	\begin{alertblock}{Careful}
+		Whoa!
+	\end{alertblock}
+	\end{frame}
+	\section{Section 2}
+	\frame{\tableofcontents}
+	\begin{frame}
+		\frametitle{HTML} 
+		\begin{overlayarea}{\textwidth}{\textheight}
+			\begin{itemize}
+				\item Apple
+				\pause
+				\item Orange
+			\end{itemize}
+		\end{overlayarea}
+	\end{frame}
+	\frame{\tableofcontents}
+	\begin{frame}
+		\frametitle{CSS}
+		\setbeamercovered{highly dynamic}
+		\onslide<1>{This is the first sentence in the frame.}
+		\only<2>{This is the second sentence in the frame.}
+		\only<3>{This is the third sentence in the frame.}
+		\only<4>{End of overlays.}
+	\end{frame}
+\end{document}
